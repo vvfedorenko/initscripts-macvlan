@@ -42,5 +42,9 @@ ip link add \
 	name ${DEVICE} \
 	type ${TYPE:-macvlan} mode ${MACVLAN_MODE:-private}
 
+if [ -n ${VRF} ]; then
+	ip link set dev ${DEVICE} vrf ${VRF}
+fi
+
 ${OTHERSCRIPT} ${CONFIG}
 
