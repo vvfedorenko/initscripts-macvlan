@@ -1,6 +1,6 @@
 Name:		initscripts-macvlan
-Version:	0.1
-Release:	3
+Version:	0.2
+Release:	1
 BuildArch:	noarch
 Summary:	macvlan ifup/down scripts
 License:	GPLv2 and GPLv2+
@@ -34,4 +34,6 @@ initscripts-macvlan provides scripts to manage macvlan network interfaces
 
 
 %changelog
-
+* Thu Apr 06 2023 Vadim Fedorenko <vfedorenko@novek.ru> - 0.2-1
+- Force parent device to be up
+- Add VRF support

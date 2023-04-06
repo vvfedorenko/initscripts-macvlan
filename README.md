@@ -18,6 +18,7 @@ Sample configuration for a `macvlan` interface:
   this `macvlan` interface is associated.
 - `MACVLAN_MODE` can be `private`, `bridge`, `vepa`, or `passthru`.
   See [this commit][1] for more information.
+- `VRF` is the name of VRF namespace to attach interface to.
 
 [1]: https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=618e1b7482f7a8a4c6c6e8ccbe140e4c331df4e9
  
