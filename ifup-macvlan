@@ -35,6 +35,8 @@ if [ ! -x ${OTHERSCRIPT} ]; then
 	OTHERSCRIPT="/etc/sysconfig/network-scripts/ifup-eth"
 fi
 
+is_available ${MACVLAN_PARENT} || ./ifup ${MACVLAN_PARENT}
+
 ip link add \
 	link ${MACVLAN_PARENT} \
 	name ${DEVICE} \
